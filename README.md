@@ -8,7 +8,7 @@ Data Analytics Project Showcasing Customer Behavior Analysis Using Python, SQL, 
 This project analyzes customer shopping behavior using transactional data from 3,900 purchases across multiple product categories.
 The objective is to understand spending patterns, customer segments, product performance, discount behavior, and subscription trends to support data-driven business decisions.
 
-The workflow follows a complete analytics lifecycle:
+# The workflow follows a complete analytics lifecycle:
 
 1) Load and explore data using Python
 
@@ -28,27 +28,27 @@ Rows: 3,900
 
 Columns: 18
 
-Type: Customer shopping transactions
+Type: Customer shopping Behavior 
 
-Key Features
+# Key Features
 
-Demographics: Age, Gender, Location, Subscription Status
+* Demographics: Age, Gender, Location, Subscription Status
 
-Purchase Info: Item Purchased, Category, Purchase Amount, Season, Size, Color
+* Purchase Info: Item Purchased, Category, Purchase Amount, Season, Size, Color
 
-Behavior: Discount Applied, Previous Purchases, Purchase Frequency
+* Behavior: Discount Applied, Previous Purchases, Purchase Frequency
 
-Feedback: Review Rating
+* Feedback: Review Rating
 
-Shipping: Standard / Express
+* Shipping: Standard / Express
 
-Data Quality
+# Data Quality
 
-37 missing review ratings → filled using category-wise median
+* 37 missing review ratings → filled using category-wise median
 
-Dropped redundant columns (e.g., promo_code_used)
+* Dropped redundant columns (e.g., promo_code_used)
 
-Standardized column names (snake_case format)
+* Standardized column names (snake_case format)
 
 🛠 Tools & Technologies
 Tool                                                                                     Purpose                          
@@ -64,125 +64,125 @@ Tool                                                                            
 
 1️⃣ Data Loading (Python)
 
-Loaded the CSV file using Pandas
+* Loaded the CSV file using Pandas
 
-Reviewed structure with info() and summary stats with describe()
+* Reviewed structure with info() and summary stats with describe()
 
-Identified missing values and data types
+* Identified missing values and data types
 
 2️⃣ Exploratory Data Analysis (EDA)
 
-Distribution analysis for age, purchase amount, ratings
+* Distribution analysis for age, purchase amount, ratings
 
-Revenue trends across gender, age groups, and shipping types
+* Revenue trends across gender, age groups, and shipping types
 
-Identified top categories and products
+* Identified top categories and products
 
-Visualized patterns using bar charts, histograms, and correlations
+* Visualized patterns using bar charts, histograms, and correlations
 
 3️⃣ Data Cleaning
 
-Imputed missing review ratings
+* Imputed missing review ratings
 
-Removed redundant fields
+* Removed redundant fields
 
-Created new features:
+* Created new features:
 
-age_group
+* age_group
 
-purchase_frequency_days
+* purchase_frequency_days
 
-Ensured consistency in discount and subscription fields
+* Ensured consistency in discount and subscription fields
 
 4️⃣ SQL Business Analysis (PostgreSQL)
 
-Using your SQL file, the following were analyzed:
+* Using your SQL file, the following were analyzed:
 
-Revenue by gender
+1) Revenue by gender
 
-Discount users who spent above average
+2) Discount users who spent above average
 
-Top 5 highest-rated products
+3) Top 5 highest-rated products
 
-Standard vs Express shipping comparison
+4) Standard vs Express shipping comparison
 
-Subscribers vs Non-Subscribers revenue
+5) Subscribers vs Non-Subscribers revenue
 
-Top products within each category
+6) Top products within each category
 
-Customer segments: New, Returning, Loyal
+7) Customer segments: New, Returning, Loyal
 
-Relationship between repeat buyers and subscription
+8) Relationship between repeat buyers and subscription
 
-Revenue by age group
+9) Revenue by age group
 
 5️⃣ Dashboard (Power BI)
 
 The dashboard includes:
 
-Revenue by gender (Male ~68%, Female ~32%)
+* Revenue by gender (Male ~68%, Female ~32%)
 
-Customer segmentation (New, Returning, Loyal)
+* Customer segmentation (New, Returning, Loyal)
 
-Subscription vs Non-Subscription spend
+* Subscription vs Non-Subscription spend
 
-Product performance and ratings
+* Product performance and ratings
 
-Discount behavior analysis
+* Discount behavior analysis
 
-Shipping type comparison
+* Shipping type comparison
 
-Category-wise and product-wise insights
+* Category-wise and product-wise insights
 
 6️⃣ Final Report
 
 A detailed PDF summarizing:
 
-Dataset overview
+* Dataset overview
 
-Python EDA
+* Python EDA
 
-SQL results
+* SQL results
 
-Dashboard findings
+* Dashboard findings
 
-Business recommendations
+* Business recommendations
 
 7️⃣ PPT (Gamma)
 
 A clean and professional presentation covering:
 
-Problem Overview
+* Problem Overview
 
-Analysis Steps
+* Analysis Steps
 
-Insights & Visuals
+* Insights & Visuals
 
-Final Recommendations
+* Final Recommendations
 
 📊 Results & Insights
 ⭐ Key Findings
 
-Male customers contribute ~68% of total revenue, almost double female customers.
+1) Male customers contribute ~68% of total revenue, almost double female customers.
 
-839 discount users still spent above the average purchase amount → strong promotional opportunity.
+2) 839 discount users still spent above the average purchase amount → strong promotional opportunity.
 
-Top-rated products include Gloves, Sandals, Boots, Hat, and Skirt.
+3) Top-rated products include Gloves, Sandals, Boots, Hat, and Skirt.
 
-Loyal customers dominate, with 3,116 buyers making multiple repeat purchases.
+4) Loyal customers dominate, with 3,116 buyers making multiple repeat purchases.
 
-Express shipping users spend more on average than standard shipping customers.
+5) Express shipping users spend more on average than standard shipping customers.
 
-Young adults and middle-aged customers generate the highest revenue.
+6) Young adults and middle-aged customers generate the highest revenue.
 
 ⭐ Recommendations
 
-Promote subscription plans—73% non-subscribers is a growth opportunity.
+1) Promote subscription plans—73% non-subscribers is a growth opportunity.
 
-Strengthen loyalty programs to support the large repeat-buyer segment.
+2) Strengthen loyalty programs to support the large repeat-buyer segment.
 
-Review discount strategy for high discount-dependent products.
+3) Review discount strategy for high discount-dependent products.
 
-Highlight top-rated products in marketing campaigns.
+4) Highlight top-rated products in marketing campaigns.
 
-Focus marketing on high-value age groups and express-shipping buyers.
+5) Focus marketing on high-value age groups and express-shipping buyers.
